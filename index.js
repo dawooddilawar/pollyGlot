@@ -1,5 +1,4 @@
 import OpenAI from "openai";
-import {process} from './env'
 
 const ctaEl = document.getElementById("cta");
 
@@ -45,10 +44,7 @@ function toggleUI() {
 }
 
 async function request(language) {
-    const openai = new OpenAI({
-        apiKey: process.env.OPENAI_API_KEY,
-        dangerouslyAllowBrowser: true
-    });
+    const openai = new OpenAI();
 
     const input = document.getElementById('input').value
 
