@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/parrot.png" class="header__logo">
+            <div class="header__text">
+                <h1 class="header__title">PollyGlot</h1>
+                <p class="header__subtitle">Perfect Translation Every Time</p>
+            </div>
+        </div>
+        <div class="app__container">
+            <label class="title" for="input">Text to translate 👇</label>
+            <textarea class="input" maxlength="255" id="input" placeholder="How Are you?..."></textarea>
+            <h3 class="title" id="language-title">Select language 👇</h3>
+            <div class="radios" id="radios">
+                <div class="radio__container">
+                    <input type="radio" value="french" id="french" name="language">
+                    <label for="french" class="radio__label">French </label>
+                    <img src="assets/fr-flag.png" class="radio__flag">
+                </div>
+                <div class="radio__container">
+                    <input type="radio" id="spanish" value="spanish" name="language">
+                    <label for="spanish" class="radio__label">Spanish</label>
+                    <img src="assets/sp-flag.png" class="radio__flag">
+                </div>
+                <div class="radio__container">
+                    <input type="radio" id="japanese" value="japanese" name="language">
+                    <label for="japanese" class="radio__label">Japanese</label>
+                    <img src="assets/jpn-flag.png" class="radio__flag">
+                </div>
+            </div>
+            <textarea class="input hide" maxlength="255" id="output" placeholder="How Are you?..."></textarea>
+            <button class="cta" id="cta">Translate</button>
+        </div>
+    </div>
+<script src="index.js" type="module"></script>
+</body>
+</html>

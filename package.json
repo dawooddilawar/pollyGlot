@@ -1,0 +1,15 @@
+{
+  "name": "pollyGlot",
+  "devDependencies": {
+    "vite": "latest"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "openai": "^4.20.0"
+  }
+}
