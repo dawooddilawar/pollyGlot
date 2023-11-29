@@ -2,6 +2,8 @@ import OpenAI from "openai";
 
 const ctaEl = document.getElementById("cta");
 
+const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
+
 let isStart = true;
 
 ctaEl.addEventListener('click', () => {
@@ -44,7 +46,10 @@ function toggleUI() {
 }
 
 async function request(language) {
-    const openai = new OpenAI();
+    const openai = new OpenAI({
+        apiKey: apiKey,
+        dangerouslyAllowBrowser: true
+    });
 
     const input = document.getElementById('input').value
 
